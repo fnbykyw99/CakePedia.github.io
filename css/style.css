@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: darkkhaki;
+}
+.all-content{
+    background-color: darkkhaki;
+    color: darkkhaki;
+}
+/* navbar */
+#navbar{
+    background-color: darkkhaki;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#logo{
+    font-size: 25px;
+    color: brown;
+}
+#logo img{
+    margin-bottom: 5px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+    color: brown;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px darkgoldenrod;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    background-color:goldenrod;
+    color: brown;
+    border-radius: 5px;
+}
+.icon{
+    margin-left: 30px;
+}
+.icon img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icon img:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+.dropdown-item{
+    color: brown;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* home section */
+
+.carousel-item{
+flex: 1 1 450px;
+margin-left: 3px;
+}
+.carousel-caption{
+    top: 45%;
+    height: auto;
+    max-height: 120px;
+}
+.big-text1{
+color: rgb(26, 179, 26);
+font-size: 36pt;
+font-weight: 900;
+flex: 1 1 450px;
+margin-left: 3px;
+}
+.big-text2{
+    color: rgb(202, 5, 71);
+    font-size: 36pt;
+    font-weight: 900;
+}
+.big-text3{
+    color: rgb(37, 37, 155);
+    font-size: 36pt;
+    font-weight: 900;
+}
+
+.spacer{
+    background-color:brown;
+    height: 10px;
+}
+.btn-warning{
+    width: 130px;
+    height: 38px;
+    background-color: brown;
+    color:whitesmoke;
+}
+    @media screen and(max-width:860) {
+        .home{
+            height: 120vh;
+        }
+    }
+    @medu=ia screen and(max-width:){
+        .big-text1{
+            font: size 30px;
+        }
+    }
+
+/* home section end */
+/* box card */
+#box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: darkkhaki;
+}
+
+#box .card{
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#box .card:hover{
+    transform: translateY(-10px);
+}
+
+/* box card end */
+/* banner */
+.banner{
+    background-color: darkkhaki;
+    padding-top: 0px;
+    padding-bottom: 800px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-size: cover;
+    align-items:baseline;
+    justify-content:left;
+    flex-wrap: wrap;
+    box-sizing: 0px 0px 10px black;
+}
+.banner .img{
+    flex: 1 1 400px;
+    height: 5%;
+}
+.banner .img img{
+    width: 100%;
+}
+.banner .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.banner.content h3{
+    color: whitesmoke;
+    font-weight: bold;
+}
+.banner .content h2{
+    font-size: 50px;
+    color: brown;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.banner .content p{
+    color: brown;
+    font-weight: bold;
+}
+#btnorder button{
+    width: 150px;
+    height: 25px;
+    letter-spacing: 5px;
+    background-color: brown;
+    color:whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-widt:800px) {
+    .banner.content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-widt:855px) {
+    .banner{
+        height: 100vh;
+    }
+}
+
+/* banner end */
+/* product card */
+#product-card{
+    background-color:darkkhaki;
+    padding-top: 30px;
+}
+#product-card h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color:brown;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid brown;
+}
+#product-card .card{
+    background-color: brown;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+#product-card .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s ease;
+}
+.overlay i .img{
+    background-color: brown;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.overlay .btn-secondary{
+    background-color: brown;
+    border: none;
+    box-shadow: none;
+}
+#product-card h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.star .checked{
+    color:yellow; 
+}
+#product-card p{
+    color: white;
+    font-weight: bold;
+}
+#product-card h6{
+    font-size: 20px;
+    color: darkkhaki;
+    font-weight: bold;
+}
+#product-card h6 span button{
+    width: 100px;
+    height: 26px;
+    font-size: 15px;
+    background: transparent;
+    letter-spacing: 3px;
+    border: 2px solid darkkhaki;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: darkkhaki;
+    text-shadow: 2px 2px 2px black;
+}
+#product-card h6 span button:hover{
+    background-color: rgb(151, 70, 12);
+    color: white;
+}
+/* product card end */
+/* gallary */
+#gallary{
+    background-color: darkkhaki;
+    margin-top: 50px;
+    border-radius: 5;
+}
+#gallary h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    
+    color:brown;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid brown;
+}
+#gallary .card{
+    box-shadow: 3px 3px 3px black;
+    cursor: pointer;
+}
+#gallary .overlay{
+    opacity: 0;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+}
+#gallary .card:hover .overlay{
+    opacity: 5;
+    margin-top: 20%;
+    transition: 0.5s ease;
+    border: 5px;
+}
+/* gallary end */
+/* about */
+#about{
+ background-color: darkkhaki;
+padding-top:50px;
+max-width: 100%;
+}
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color:brown;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid brown;
+}
+#about .card{
+    background-color: brown;
+    box-shadow: 1px 1px 5px black;
+}
+#about p{
+    color:brown;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+#bt button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px) {
+    #about p{
+        font-size: 20px;
+    }
+}
+/* about end */
+/* contact */
+#contact{
+    background-color: darkkhaki;
+    margin-top: 100px;
+}
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: brown;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid brown;
+}
+#contact input{
+    background-color: brown;
+}
+#contact input::placeholder{
+    color: white;
+}
+#contact textarea{
+    background-color: brown;
+}
+#contact textarea::placeholder{
+    color: white;
+}
+#messagebtn{
+    text-align: center;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#messagebtn button:hover{
+    background-color: brown;
+}
+/* contact */
+
+/* footer */
+#footer{
+    width: 100%;
+    background-color: rgb(107, 36, 36);
+    box-shadow: 0px 0px 0px black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icon i{
+    background-color: white;
+    color: brown;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    transition:0.5s;
+    cursor: pointer;
+}
+.icon i:hover{
+    background-color: darkkhaki;
+    color: white;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credite{
+    color: white;
+}
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: brown;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: maroon;
+}
+
